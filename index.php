@@ -59,7 +59,7 @@ $query->bindValue(1, $_SESSION['umid']);
 $query->execute();
 $result = $query->fetchall();
     if(count($result) > 0) {
-    	echo '<p>You have registered slot "'.$result[0]["time_slot"].'" for project "'.$result[0]["project_title"].'"</p>';
+    	echo '<p>You have registered slot "'.str_replace('-','&ndash;',$result[0]["time_slot"]).'" for project "'.$result[0]["project_title"].'"</p>';
     } else {
 	echo "<p>You haven't registered any slots</p>";
     }

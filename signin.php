@@ -4,6 +4,7 @@ include_once("includes/connection.php");
 
 if (isset($_POST['umid'], $_POST['password'])) {
 	$umid = $_POST['umid'];
+	$_SESSION['umid'] = $umid;
 	$password = md5($_POST['password']);
 	
 	if (empty($umid) or empty($password)) {
@@ -37,10 +38,10 @@ if (isset($_POST['umid'], $_POST['password'])) {
 	    <br><br></small>
 	<?php } ?>
       	     <label>UMID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-	     <input type="text" name="umid" placeholder="UMID">
+	     <input type="text" name="umid" value=<?php echo $_SESSION['umid']?>>
 	     <br><br>
 	     <label>Password</label>
-	     <input type="password" name="password" placeholder="Password">
+	     <input type="password" name="password">
 	     <br><br>
 	     <input type="submit" value="Sign in" id="signInSubmitBtn">
 	     &nbsp;&nbsp;
