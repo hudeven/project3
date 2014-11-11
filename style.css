@@ -1,0 +1,182 @@
+/**********************************************************************************/
+/* BEGIN OF CSS style for global pages, including header.php, footer.php */
+
+body {
+    margin:0px;
+    padding: 120px;
+    font-family: Arial;
+}
+
+.header {
+    background:gray;
+    position: absolute;
+    width:100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+#category_dropdown {
+    font-size: 20px;
+}
+
+#search_input {
+    font-size: 20px;
+    
+}
+
+.myButton {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#homeButton {
+    font-size: 20px;
+}
+#recordButton {
+    font-size: 20px;
+}
+#signin {
+    font-size: 20px;
+}
+#signup {
+    font-size: 20px;
+}
+#signout {
+    font-size: 20px;
+}
+.form{
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto auto auto;
+}
+
+.footer {
+    width:100%;
+    text-align: center;
+}
+.container{
+    background:lightGray;
+    width: 90%;
+
+    /*margin: 0 auto;
+    position: absolute; top: 120px; left: 300px;*/
+}
+
+a:link, a:visited {
+    color: slateGray;
+    text-decoration: none;
+    border-bottom: 1px dotted slateGray;
+}
+
+a:hover {
+    color:#777;
+}
+
+/* END OF CSS Style for global pages*/
+
+
+/**********************************************************************************/
+/* BEGIN OF CSS style for sell.php, product_detail.php, order.php, order_detail.php */
+/* Following style components are generic and standardized. Hence can be reused in other pages*/
+
+h3 {
+    color: coral;
+}
+.box {
+    border: 2px ridge;
+    border-color: gray;
+    border-radius: 10px;
+    margin: 5px;
+    background-color: white;
+    padding-left: 10px; padding-right: 10px;
+    padding-bottom: 10px; padding-top: 10px;
+}
+.menu {
+    position: relative;
+    width: 400px;
+    text-align: left;
+    padding: 10px;
+}
+
+.logo {
+    height: 115px;
+    width: 175px;
+}
+
+.center_align {
+    text-align: center;
+}
+.left_align {
+    text-align: left;
+    margin-left: 4px;
+}
+
+em{
+    font-size: small;
+    font-style: normal;
+}
+.comments {
+    color: red;
+}
+
+ul.nostyle_horizontal li {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+}
+
+.left_column {
+    margin-left: 25px;
+    width: 30%;
+}
+
+.center_column {
+    width: 50%;
+    margin-left: 30px;
+    position: relative;
+}
+
+.display_inline {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.text_wrap {
+    word-wrap: break-word;
+}
+/* END OF CSS Style for Sell.php, product_detail.php, order.php, order_detail.php */
+/**********************************************************************************/
+
+
+
+
+
+
+/**********************************************************************************/
+/* BEGIN OF CSS style for index.php */
+
+.item {
+    float: left;
+}
+.item_icon {
+    height: 150px;
+    width: 150px;
+}
+
+/* END OF CSS Style for index.php */
+/**********************************************************************************/
+
+#signInSubmitBtn {
+    font-size: 20px;
+}
+table {
+    width: 100%; 
+    background-color: #f1f1c1;
+    border: 1px solid black;
+}
+td {
+    text-align: center;
+    font-size: 18px;
+}
